@@ -1,17 +1,26 @@
 void main() {
-  string titular = "Gabriel";
-  int agencia = 123;
-  int conta = 145;
-  double saldo = 10.0;
+  ContaCorrente contadaAmanda = ContaCorrente();
+  contadaAmanda.titular = "Amanda";
+  contadaAmanda.agencia = 123;
+  contadaAmanda.conta = 1;
 
-  string titular1 = "José";
-  int agencia1 = 123;
-  int conta1 = 146;
-  double saldo1 = 0.0;
+  print("Titular: ${contadaAmanda.titular}");
+  print("Agência: ${contadaAmanda.agencia}");
+  print("Saldo: ${contadaAmanda.saldo}");
 
-  string titular2 = "Gabriela";
-  int agencia2 = 123;
-  int conta2 = 147;
-  double saldo2 = 20.0
+  ContaCorrente contadoTiago = ContaCorrente();
+  contadoTiago.titular = "Tiago";
+  contadoTiago.agencia = 123;
+  contadoTiago.conta = 2;
+
+  print("Titular: ${contadoTiago.titular}");
+  print("Agência: ${contadoTiago.agencia}");
+  print("Saldo: ${contadoTiago.saldo}");
 }
-git s
+
+class ContaCorrente {
+  String titular = '';
+  int agencia = 0;
+  int conta = 0;
+  double saldo = 30.0; //Promoção: Faça o cadastro e ganhe 30 de saldo
+}
